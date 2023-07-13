@@ -1,0 +1,208 @@
+</section>
+
+    <style type='text/css'>
+       
+        .product-image { float: left; width: 20%; }
+        .product-details { float: left; width: 37%; }
+        .product-price { float: left; width: 12%; }
+        .product-quantity { float: left; width: 10%; }
+        .product-removal { float: left; width: 9%; }
+        .product-line-price { float: left; width: 12%; text-align: right; }
+        
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        body {
+            padding: 0px 30px 30px 20px;
+            font-weight: 100;
+        }
+
+        h1 {
+            font-weight: 100;
+        }
+
+        .shopping-cart {
+            margin-top: -45px;
+        }
+
+        .column-labels {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid;
+            text-indent: -9999px;
+
+        }
+
+
+        /* Product entries */
+        .product {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+           /* border-bottom: 1px solid; */
+        }
+
+        .product .product-image {
+            text-align: center;
+        }
+
+        .product .product-image img {
+            width: 100px;
+        }
+
+
+        .product-details .product-title {
+
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        .product-details .product-description {
+            margin: 5px 20px 5px 0;
+            line-height: 1.4em;
+        }
+
+
+        .product-quantity input {
+            width: 40px;
+        }
+
+        .remove-product {
+            border: 0;
+            padding: 4px 8px;
+            background-color: #c66;
+            color: #fff;
+            font-weight: bold;
+            font-size: 12px;
+            border-radius: 3px;
+        }
+
+        .remove-product:hover {
+            background-color: #a44;
+        }
+
+
+
+        /* Totals section */
+        .totals .totals-item {
+
+            float: right;
+            clear: both;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .totals .totals-item label {
+            float: left;
+            clear: both;
+            width: 79%;
+            text-align: right;
+        }
+
+        .totals .totals-item .totals-value {
+            float: right;
+            width: 21%;
+            text-align: right;
+        }
+
+        .totals-item-total {
+            font-weight: bold;
+        }
+
+
+        .checkout {
+            float: right;
+            border: 0;
+            margin-top: 20px;
+            padding: 6px 25px;
+            background-color: #6b6;
+            color: #fff;
+            font-size: 25px;
+            border-radius: 3px;
+        }
+
+        .checkout:hover {
+            background-color: #494;
+        }
+    </style>
+
+
+
+</head>
+
+<se>
+
+
+
+    <h1>Carrito</h1>
+
+    <div class="shopping-cart">
+
+        <div class="column-labels">
+            <label class="product-image">Image</label>
+            <label class="product-details">Product</label>
+            <label class="product-price">Precio</label>
+            <label class="product-quantity">Cantidad</label>
+            <label class="product-removal">Remove</label>
+            <label class="product-line-price">Total</label>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Producto lista</div>
+                <p class="product-description">Articulo</p>
+            </div>
+            <div class="product-price">precio</div>
+            <div class="product-quantity">
+                <input type="number" value="2" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
+                </button>
+            </div>
+            <div class="product-line-price">total</div>
+        </div>
+
+
+        <div class="totals">
+            <div class="totals-item">
+                <label>Subtotal</label>
+                <div class="totals-value" id="cart-subtotal">71.97</div>
+            </div>
+            <div class="totals-item">
+                <label>Tax (5%)</label>
+                <div class="totals-value" id="cart-tax">3.60</div>
+            </div>
+            <div class="totals-item">
+                <label>Shipping</label>
+                <div class="totals-value" id="cart-shipping">15.00</div>
+            </div>
+            <div class="totals-item totals-item-total">
+                <label>Grand Total</label>
+                <div class="totals-value" id="cart-total">90.57</div>
+            </div>
+        </div>
+
+        <button class="checkout">Comprar</button>
+
+    </div>  
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/static/js/index.js"></script>
+
+</section>
