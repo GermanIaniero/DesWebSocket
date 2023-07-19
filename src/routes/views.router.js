@@ -9,9 +9,9 @@ router.get('/', async (req, res) => {
     res.render('products', { products })
 })
 
-router.get('/products-realtime', async (req, res) => {
+router.get('/realtimeproducts', async (req, res) => {
     const products = await productManager.list()
-    res.render('products_realtime', { products })
+    res.render('realtimeproducts', { products })
 })
 
 router.get('/form-products', async (req, res) => {

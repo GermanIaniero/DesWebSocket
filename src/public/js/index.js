@@ -2,25 +2,7 @@ const socket = io()
 const chatbox = document.getElementById('chatbox')
 let producto = sessionStorage.getItem('producto') || ''
 
-/*if (!user) {
-    Swal.fire({
-        title: 'Auth',
-        input: 'text',
-        text: 'Set username',
-        inputValidator: value => {
-            return !value.trim() && 'Please. Write a username'
-        },
-        allowOutsideClick: false
-    }).then(result => {
-        user = result.value
-        document.getElementById('username').innerHTML = user
-        sessionStorage.setItem("user", user)
-        socket.emit('new', user)
-    })
-} else {
-    document.getElementById('username').innerHTML = user
-    socket.emit('new', user)
-}*/
+
 
 
 producto = result.value

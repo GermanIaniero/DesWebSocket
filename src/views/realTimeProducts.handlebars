@@ -165,8 +165,8 @@
             
     </div>
     
-    
-    {{#each products}}
+    <tbody id="tbody">
+      {{#each products}}
         <div class="product">
             <div class="product-price" style="padding-left: 150px">{{this.id}}</div>
             <div class="product-price" style="padding-left: 150px">{{this.name}}</div>
@@ -178,8 +178,9 @@
                 </button>
             </div>
         </div>
-    {{/each}}
-    
+      {{/each}}
+    </tbody>
+
         <div class="totals">
             <div class="totals-item">
                 <label>Subtotal</label>

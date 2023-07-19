@@ -9,6 +9,7 @@ import __dirname from './utils.js'
 
 const app = express()
 
+app.use(express.static('public'));
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
