@@ -6,12 +6,12 @@ const productManager = new ProductManager()
 
 router.get('/', async (req, res) => {
     const products = await productManager.list()
-    res.render('products', { products })
+    res.render('realTimeProducts', { products })
 })
 
-router.get('/realtimeproducts', async (req, res) => {
+router.get('/products-realtime', async (req, res) => {
     const products = await productManager.list()
-    res.render('realtimeproducts', { products })
+    res.render('products_realtime', { products })
 })
 
 router.get('/form-products', async (req, res) => {
